@@ -10,3 +10,4 @@ Implementing various Cryptography methods using Python programming
 | ------------- |:-------------:|
 | caesarCipher.py     | Implements Caesar Cipher i.e., ROT3. Keeps unknown chars as-is    |
 | caesarDecipher.py     | Implements Decipher mechanism to decrypt message encrypted using Caesar cipher i.e., ROT3. Keeps unknown chars as-is    |
+| bruteforceDecipher.py     | Implements a brute forcer to break any substitution cipher taking the cipher text as the input. Keeps unknown chars as-is    |
