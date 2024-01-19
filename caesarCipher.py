@@ -20,11 +20,11 @@ def encrypt(cipher, plaintext):
        if i in cipher:
         loop = cipher[i]
         encrypted += loop
-       else:
+       else:    #Omit unknown chars from keygen
         encrypted += " "  
     return encrypted
 
-cipher = keygen(3) # Caesar cipher functional requirement of ROT3
+cipher = keygen(3) # Caesar cipher functional requirement of ROT3, You may modify it to suit your needs, for e.g., if you need to implement ROT13 substitution cipher just change the number from 3 to 13
 plaintext = input("Enter your message to be encrypted: ")
 enc_message = encrypt(cipher, plaintext)
 print("Here is your encrypted message: " + enc_message)
