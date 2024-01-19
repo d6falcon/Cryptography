@@ -8,4 +8,4 @@ Implementing various Cryptography methods using Python programming
 
 | Program        | Description          |
 | ------------- |:-------------:|
-| caesarCipher.py     | Implements Caesar Cipher i.e., ROT3. Omits unknown chars with a space    |
+| caesarCipher.py     | Implements Caesar Cipher i.e., ROT3. Keeps unknown chars as-is    |
