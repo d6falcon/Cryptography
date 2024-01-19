@@ -28,3 +28,5 @@ for n in range(26): # Roll through all the keys for the alphabet length to disco
     decipher = keygen(26-n)
     dec_message = decrypt(decipher, encryptedtext)
     print("ROT" + str(n) + ":" + " " + dec_message)
+
+print("Look through above keys to find plain text. The corresponding ROT method is the algorithm used to encrypt")
