@@ -7,7 +7,7 @@ def keygen(x):
     key = {}
     count = 0
     for char in alphabets:
-        key[char] = alphabets[(count + x) % len(alphabets)] 
+        key[char] = alphabets[(count + x) % len(alphabets)] # E = C(p,k) mod 26 shift cipher algorithm where key value (k) is 3 in case of Caesar cipher
         count += 1
     for char in Alphabets:
         key[char] = Alphabets[(count + x) % len(Alphabets)] 
