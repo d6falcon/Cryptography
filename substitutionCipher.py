@@ -3,7 +3,7 @@
 #Implement a substitution cipher (random key) taking the message as the input
 import random
 
-def keygen(x):
+def keygen():
     alphabets = "abcdefghijklmnopqrstuvwxyz"
     Alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     calpha = list(alphabets)
@@ -12,7 +12,7 @@ def keygen(x):
     for char in alphabets:
         key[char] = calpha.pop(random.randint(0, len(calpha) - 1)) 
     for char in Alphabets:
-        key[char] = calpha.pop(random.randint(0, len(cAlpha) - 1)) 
+        key[char] = cAlpha.pop(random.randint(0, len(cAlpha) - 1)) 
     return key
 
 def encrypt(cipher, plaintext):
