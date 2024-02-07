@@ -15,16 +15,16 @@ def keygen():
         key[char] = cAlpha.pop(random.randint(0, len(cAlpha) - 1)) 
     return key
 
-def encrypt(cipher, plaintext):
-    encrypted = ""
+def encrypt(cipherkey, plaintext):
+    encryptedtext = ""
     for i in plaintext:
-       if i in cipher:
-        encrypted += cipher[i]
+       if i in cipherkey:
+        encryptedtext += cipherkey[i]
        else:    #Keep unknown chars from keygen as-is
-        encrypted += i 
-    return encrypted
+        encryptedtext += i 
+    return encryptedtext
 
-cipher = keygen() # Random char
+cipherkey = keygen() # Random char
 plaintext = input("Enter your message to be encrypted: ")
-enc_message = encrypt(cipher, plaintext)
+enc_message = encrypt(cipherkey, plaintext)
 print("Here is your encrypted message: " + enc_message)

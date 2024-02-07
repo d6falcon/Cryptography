@@ -14,19 +14,19 @@ def keygen(x):
         count += 1
     return key
 
-def decrypt(decipher, dec_message):
-   decrypted = ""
+def decrypt(decipherkey, dec_message):
+   decryptedtext = ""
    for i in dec_message:
-      if i in decipher:
-         decrypted += decipher[i]
+      if i in decipherkey:
+         decryptedtext += decipherkey[i]
       else: #Keep unknown chars from keygen as-is
-         decrypted += i
-   return decrypted
+         decryptedtext += i
+   return decryptedtext
          
 encryptedtext = input("Enter your message to be decrypted: ")
 for n in range(26): # Roll through all the keys for the alphabet length to discover which ROT method was used as the algorithm to encrypt
-    decipher = keygen(26-n)
-    dec_message = decrypt(decipher, encryptedtext)
+    decipherkey = keygen(26-n)
+    dec_message = decrypt(decipherkey, encryptedtext)
     print("ROT" + str(n) + ":" + " " + dec_message)
 
 print("Look through above keys to find plain text. The corresponding ROT method is the algorithm used to encrypt")

@@ -14,16 +14,16 @@ def keygen(x):
         count += 1
     return key
 
-def decrypt(decipher, dec_message):
-   decrypted = ""
+def decrypt(decipherkey, dec_message):
+   decryptedtext = ""
    for i in dec_message:
-      if i in decipher:
-         decrypted += decipher[i]
+      if i in decipherkey:
+         decryptedtext += decipherkey[i]
       else: #Keep unknown chars from keygen as-is
-         decrypted += i
-   return decrypted
+         decryptedtext += i
+   return decryptedtext
          
-decipher = keygen(26-3) # Caesar cipher functional requirement of ROT3, You may modify it to suit your needs, for e.g., if you need to implement ROT13 substitution cipher just change the number from 3 to 13
+decipherkey = keygen(26-3) # Caesar cipher functional requirement of ROT3, You may modify it to suit your needs, for e.g., if you need to implement ROT13 substitution cipher just change the number from 3 to 13
 encryptedtext = input("Enter your message to be decrypted: ")
-dec_message = decrypt(decipher, encryptedtext)
+dec_message = decrypt(decipherkey, encryptedtext)
 print("Here is your deciphered message: " + dec_message)
