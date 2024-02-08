@@ -14,3 +14,4 @@ Implementing various Cryptography methods using Python programming
 |                                                                                      |
 | |This above vulnerability in the Cryptosystem resulted in the evolution of Substitution ciphers. This means we look at increasing the key space by randomizing the alphabets that can be substituted with. The key space in that case would be 26! (26 facotrial = 403291461126605635584000000)   |
 | substitutionCipher.py     | Implements Substitution Cipher where key space is same however there is no shift (ROT) implemented, the key gen is random. Keeps unknown chars as-is     |
+| substitutionDecipher.py     | Implements Substitution Decipher mechanism to decrypt message encrypted using Substitution cipher with random key. Keeps unknown chars as-is     |

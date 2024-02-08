@@ -24,6 +24,6 @@ def decrypt(decipherkey, dec_message):
    return decryptedtext
          
 decipherkey = keygen(26-3) # Caesar cipher functional requirement of ROT3, You may modify it to suit your needs, for e.g., if you need to implement ROT13 substitution cipher just change the number from 3 to 13
-encryptedtext = input("Enter your message to be decrypted: ")
+encryptedtext = input("Enter your ROT3 message to be decrypted: ")
 dec_message = decrypt(decipherkey, encryptedtext)
 print("Here is your deciphered message: " + dec_message)
