@@ -28,3 +28,16 @@ cipherkey = keygen() # Random char
 plaintext = input("Enter your message to be encrypted: ")
 enc_message = encrypt(cipherkey, plaintext)
 print("Here is your encrypted message: " + enc_message)
+
+# Uncomment below code to perform decipher
+# def decrypt_key(ckey):
+#     decipherkey = {}
+#     for i in ckey:
+#         decipherkey[ckey[i]] = i
+#     return decipherkey    
+
+
+# decipherkey = decrypt_key(cipherkey)
+# dec_message = encrypt(decipherkey, enc_message)
+# print("Here is your decrypted message: " + dec_message)
+# print(cipherkey, decipherkey)
