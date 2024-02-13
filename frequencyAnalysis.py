@@ -1,20 +1,4 @@
-ciphertext = """lrvmnir bpr sumvbwvr jx bpr lmiwv yjeryrkbi jx qmbm wi
-bpr xjvni mkd ymibrut jx irhx wi bpr riirkvr jx
-ymbinlmtmipw utn qmumbr dj w ipmhh but bj rhnvwdmbr bpr
-yjeryrkbi jx bpr qmbm mvvjudwko bj yt wkbrusurbmbwjk
-lmird jk xjubt trmui jx ibndt
-  wb wi kjb mk rmit bmiq bj rashmwk rmvp yjeryrkb mkd wbi
-iwokwxwvmkvr mkd ijyr ynib urymwk nkrashmwkrd bj ower m
-vjyshrbr rashmkmbwjk jkr cjnhd pmer bj lr fnmhwxwrd mkd
-wkiswurd bj invp mk rabrkb bpmb pr vjnhd urmvp bpr ibmbr
-jx rkhwopbrkrd ywkd vmsmlhr jx urvjokwgwko ijnkdhrii
-ijnkd mkd ipmsrhrii ipmsr w dj kjb drry ytirhx bpr xwkmh
-mnbpjuwbt lnb yt rasruwrkvr cwbp qmbm pmi hrxb kj djnlb
-bpmb bpr xjhhjcwko wi bpr sujsru msshwvmbwjk mkd
-wkbrusurbmbwjk w jxxru yt bprjuwri wk bpr pjsr bpmb bpr
-riirkvr jx jqwkmcmk qmumbr cwhh urymwk wkbmvb"""
-
-
+ciphertext = """wbkgmodoxkiai jf mpl dls ulwpodawox wagplbadz yltawli gbjtly mj vl vjmp yaffawhxm ody xovjbajhi. ad mpl hdamly nadzyju, wbkgmodoxkmaw lffjbmi om vxlmwpxlk gobn yhbadz ighbbly mpl yltlxjguldm jf ujbl lffawaldm ulodi fjb wobbkadz jhm blglmamatl moini, ihwp oi uaxamobk wjyl vblonadz (ylwbkgmajd). mpai whxuadomly ad mpl yltlxjguldm jf mpl wjxjiihi, mpl sjbxy'i fabim fhxxk lxlwmbjdaw, yazamox, gbjzbouuovxl wjughmlb, spawp oiiaimly ad mpl ylwbkgmajd jf wagplbi zldlbomly vk mpl zlbuod obuk'i xjbldq iq40/42 uowpadl. lemldiatl jgld owoyluaw blilobwp admj wbkgmjzbogpk ai blxomatlxk blwldm, vlzaddadz ad mpl uay-1970i. ad mpl lobxk 1970i avu glbijddlx yliazdly mpl yomo ldwbkgmajd imodyoby (yli) oxzjbampu mpom vlwoul mpl fabim flylbox zjtlbduldm wbkgmjzbogpk imodyoby ad mpl hdamly imomli. ad 1976 spamfalxy yaffal ody uobmad plxxuod ghvxaiply mpl yaffalactplxxuod nlk lewpodzl oxzjbampu. ad 1977 mpl bio oxzjbampu soi ghvxaiply ad uobmad zobydlb'i iwaldmafaw oulbawod wjxhud. iadwl mpld, wbkgmjzbogpk poi vlwjul o saylxk hily mjjx ad wjuuhdawomajdi, wjughmlb dlmsjbni, ody wjughmlb ilwhbamk zldlboxxk."""
 
 # source of frequency can be found in readme.md
 # alphabets_frequency = {'a': 0.0817, 'b': 0.0150, 'c': 0.0278, 'd': 0.0425, 'e': 0.1270, 'f': 0.0223,
@@ -47,6 +31,7 @@ class Analysis:
       if line_count % 3 == 2:
         print()
       line_count += 1
+    print('\n')
       
 analyse = Analysis()
 analyse.calculate_frequency(ciphertext)
