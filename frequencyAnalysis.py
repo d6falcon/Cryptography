@@ -1,3 +1,8 @@
+
+#This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation
+#Author: Srikanth Dabbiru
+#Implement Frequency analysis taking the cipher & english alphabet frequencies as the input
+
 ciphertext = """wbkgmodoxkiai jf mpl dls ulwpodawox wagplbadz yltawli gbjtly mj vl vjmp yaffawhxm ody xovjbajhi. ad mpl hdamly nadzyju, wbkgmodoxkmaw lffjbmi om vxlmwpxlk gobn yhbadz ighbbly mpl yltlxjguldm jf ujbl lffawaldm ulodi fjb wobbkadz jhm blglmamatl moini, ihwp oi uaxamobk wjyl vblonadz (ylwbkgmajd). mpai whxuadomly ad mpl yltlxjguldm jf mpl wjxjiihi, mpl sjbxy'i fabim fhxxk lxlwmbjdaw, yazamox, gbjzbouuovxl wjughmlb, spawp oiiaimly ad mpl ylwbkgmajd jf wagplbi zldlbomly vk mpl zlbuod obuk'i xjbldq iq40/42 uowpadl. lemldiatl jgld owoyluaw blilobwp admj wbkgmjzbogpk ai blxomatlxk blwldm, vlzaddadz ad mpl uay-1970i. ad mpl lobxk 1970i avu glbijddlx yliazdly mpl yomo ldwbkgmajd imodyoby (yli) oxzjbampu mpom vlwoul mpl fabim flylbox zjtlbduldm wbkgmjzbogpk imodyoby ad mpl hdamly imomli. ad 1976 spamfalxy yaffal ody uobmad plxxuod ghvxaiply mpl yaffalactplxxuod nlk lewpodzl oxzjbampu. ad 1977 mpl bio oxzjbampu soi ghvxaiply ad uobmad zobydlb'i iwaldmafaw oulbawod wjxhud. iadwl mpld, wbkgmjzbogpk poi vlwjul o saylxk hily mjjx ad wjuuhdawomajdi, wjughmlb dlmsjbni, ody wjughmlb ilwhbamk zldlboxxk."""
 
 # source of frequency can be found in readme.md
@@ -66,6 +71,6 @@ analyse = Analysis()
 analyse.calculate_frequency(ciphertext)
 analyse.print_frequency()
 # set mapping if able to analyse which ones are predictable 
-mapping = {'l': 'e', 'm': 't', 'p': 'h', 'i': 's', 'a': 'i', 'd': 'n', 's': 'w', 'j': 'o', 'x': 'l', 'y': 'd', 'h': 'u', 'w': 'c', 'o': 'a', 'u': 'm', 'k': 'y', 'v': 'b', 'g': 'p', 'b': 'r', 'z': 'g', 'n': 'k', 't': 'v', 'e': 'x'}  # map alphabets until all are done and the resulting message is readable
+mapping = {'l': 'e', 'm': 't', 'p': 'h', 'i': 's', 'a': 'i', 'd': 'n', 's': 'w', 'j': 'o', 'x': 'l', 'y': 'd', 'h': 'u', 'w': 'c', 'o': 'a', 'u': 'm', 'k': 'y', 'v': 'b', 'g': 'p', 'b': 'r', 'z': 'g', 'n': 'k', 't': 'v', 'e': 'x'}  # map alphabets until all are done and the resulting message is readable, konchem laborious mama but doable!
 analyse.set_mapping(ciphertext, mapping)
 analyse.compare_frequency()
