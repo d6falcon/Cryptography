@@ -16,3 +16,12 @@ Implementing various Cryptography methods using Python programming
 | substitutionCipher.py     | Implements Substitution Cipher where key space is same however there is no shift (ROT) implemented, the key gen is random. Keeps unknown chars as-is. They are insecure today becuase they can be broken using frequency analysis where for e.g. alphabet 'e' occurs 12.7% of times in any english article (For more on Frequency analysis: https://en.wikipedia.org/wiki/Letter_frequency)   |
 | frequencyAnalysis.py     | Implements Frequency Analysis to break any Substitution Cipher. Absolute value is used to compare the english alphabet frequency and the calculated frequency from the cipher text.   |
 | .py     | Implements One Time Pad.   |
+| .py     | Stream Ciphers.   |
+| .py     | Block Ciphers.   |
+| .py     | Key Exchange - Diffie Hellman.   |
+| .py     | Stream Ciphers.   |
+| .py     | PKI - RSA.   |
+| .py     | Hash Function.   |
+| .py     | HMAC.   |
+| .py     | SSL / TLS.   |
+| .py     | Blockchain. :-)   |
