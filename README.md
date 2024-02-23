@@ -19,9 +19,8 @@ Implementing various Cryptography methods using Python programming
 |7| .py     | Stream Ciphers.   |
 |8| .py     | Block Ciphers.   |
 |9| .py     | Key Exchange - Diffie Hellman.   |
-|10| .py     | Stream Ciphers.   |
-|11| .py     | PKI - RSA.   |
-|12| .py     | Hash Function.   |
-|13| .py     | HMAC.   |
-|14| .py     | SSL / TLS.   |
-|15| .py     | Blockchain. :-)   |
+|10| .py     | PKI - RSA.   |
+|11| .py     | Hash Function.   |
+|12| .py     | HMAC.   |
+|13| .py     | SSL / TLS.   |
+|14| .py     | Blockchain. :-)   |
