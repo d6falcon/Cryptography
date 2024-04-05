@@ -23,5 +23,9 @@ for i in range(10):
 # declare a message
 # encrypt
 # decrypt
-# brute force
-# explain a problem with stream cipher
+
+
+# explain problem(s) with stream cipher:
+   # No Authenticity - intercepting and changing the original message
+   # Key reuse
+   # Low entropy
