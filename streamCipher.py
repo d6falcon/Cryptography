@@ -18,4 +18,10 @@ key = keyStream(15) # insert any seed value here to generate same set of random 
 for i in range(10):
     print(key.generate_keystream())
     
-    
+# work in progress...
+
+# declare a message
+# encrypt
+# decrypt
+# brute force
+# explain a problem with stream cipher
