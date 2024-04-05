@@ -3,7 +3,7 @@
 #Implements a stream cipher. It is similar to a one time pad except the number is randomly generated. For random generation, we use something called LCG (linear congruential generator) - generate random keys but each time the function is run it generates the same set of random keys thus solving the problem that one time pads had
 
 
-class keyStream:    #define a class with key stream needed, default the seed by 1 if not called at line 25
+class keyStream:    #define a class with key stream needed, default the seed by 1 if not called at line 17
     def __init__(self, key=1):
         self.next = key
         
