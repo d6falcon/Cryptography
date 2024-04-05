@@ -12,26 +12,26 @@ class keyStream:    #define a class with key stream needed, default the seed by 
         return self.next
     
     def generate_keystream(self):
-        return self.random() % 1024  # returns random numbers between 0 to 1024
+        return self.random() % 256  # returns random numbers between 0 to 254
   
-  
-def encrypt(key, message):
+def encrypt(seed, message):
+    key = keyStream(seed)  # Create a new instance of keyStream with the given seed
     return bytes([message[i] ^ key.generate_keystream() for i in range(len(message))])
-    
-cipherkey = keyStream(9) # insert any seed value here to generate same set of random numbers
-for i in range(10):
-    print(cipherkey.generate_keystream())
 
-cipherkey = keyStream(15)
+def decrypt(seed, ciphertext):
+    return encrypt(seed, ciphertext)  # Decryption is just encryption with the same seed
+
+cipherkey = 15
 message = "Cryptography is the key".encode()
 
-#Encryption
+# Encryption
 ciphertext = encrypt(cipherkey, message)
-print(ciphertext)
+print("Ciphertext:", ciphertext)
 
-#Decryption
-deciphertext = encrypt(cipherkey, ciphertext)
-print(deciphertext)
+# Decryption
+deciphertext = decrypt(cipherkey, ciphertext)
+print("Decrypted message:", deciphertext.decode())  
+
 
 # explain problem(s) with stream cipher:
    # No Authenticity - intercepting and changing the original message
