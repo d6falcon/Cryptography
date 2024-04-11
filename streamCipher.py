@@ -19,7 +19,7 @@ def encrypt(seed, message):
     return bytes([message[i] ^ key.generate_keystream() for i in range(len(message))])
 
 def decrypt(seed, ciphertext):
-    return encrypt(seed, ciphertext)  # Decryption is just encryption with the same seed
+    return encrypt(seed, ciphertext)  # Decryption function works very similar to encryption func and with the same seed
 
 cipherkey = 15
 message = "Cryptography is the key".encode()
