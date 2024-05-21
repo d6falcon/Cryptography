@@ -33,7 +33,7 @@ deciphertext = decrypt(cipherkey, ciphertext)
 print("Decrypted message:", deciphertext.decode())  
 
 
-# explain problem(s) with stream cipher:
+# explain problem(s) with stream cipher -
    # No Authenticity - intercepting and changing the original message
    # Key reuse
    # Low entropy
