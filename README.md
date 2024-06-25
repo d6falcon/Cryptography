@@ -17,10 +17,4 @@ Implementing various Cryptography methods using Python programming
 |5| `frequencyAnalysis.py`     | Implements Frequency Analysis to break any Substitution Cipher. Absolute value is used to compare the english alphabet frequency and the calculated frequency from the cipher text.   |
 |6| `onetimePad.py`     | Implements One Time Pad. It is a simple example of stream cipher however technically its not a full blown stream cipher which are used commonly between client/server communication. The one time pads are known to be unbreakable or in other words impossible to break unless the key used to encrypt is known. Welcome to the world of Secure Comms! However, there are problems around using this kind such as the key stream needs to be as long as the message that needs to be encrypted! With the amount of data sent in the modern world the implementation of one time pad is unfathomable.  |
 |7| `streamCipher.py`     | Stream Ciphers are similar to one time pads except the number is randomly generated here. Stream ciphers do not have the same problem with key stream such as the one time pads because of the implementation of LCG. Typical use cases in Mobile Phones. Bit by bit XOR function applied.|
-|8| `blockCipher.py`    | Block Ciphers are 8bytes in size per block. Therefore, in this case the encryption works block by block instead of bit by bit. Most common cipher is the DES that was designed and developed by IBM.  |
-|9| *tba*     | Key Exchange - Diffie Hellman.   |
-|10| *tba*     | PKI - RSA.   |
-|11| *tba*     | Hash Function.   |
-|12| *tba*     | HMAC.   |
-|13| *tba*     | SSL / TLS.   |
-|14| *tba*     | Blockchain. :-)   |
+|8| `blockCipher.py`    | Block Ciphers are 8bytes in size per block. Therefore, in this case the encryption works block by block instead of bit by bit. Most common cipher is the DES (56-bit) that was designed and developed by IBM. Russians developed a similar cipher called GOST however the bit size was 256-bit. |
